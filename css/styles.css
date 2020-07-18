@@ -170,10 +170,6 @@ background-color: var(--accent-color);
 border-radius: 3px;
 }
 
-.address-list-item-link-icon
-{
-  margin-right: 10px;
-}
 
 
 .address-list-item-link
@@ -409,6 +405,15 @@ position: relative;
 .our-team-list-item-profession {
   margin-bottom: 16px;
 }
+
+.our-team .social-list-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+}
+
 /* постоянные клиенты */
 
 .clients {
