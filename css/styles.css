@@ -169,6 +169,19 @@ height: 4px;
 background-color: var(--accent-color);
 border-radius: 3px;
 }
+
+.address-list-item-link-icon
+{
+  margin-right: 10px;
+}
+
+
+.address-list-item-link
+{
+  display: flex;
+  align-items: center;
+}
+
     
 /* Герой */
 .main-title {
@@ -269,6 +282,24 @@ border-radius: 3px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+
+.advantages-list-item-icon-container{
+  display: block;
+
+  margin-bottom: 30px;
+
+  width: 270px;
+  height: 120px;
+
+  background-color: #F5F4FA;
+  border-radius: 4px;
+}
+.advantages-list-item-icon-container{
+  padding: 25px 100px;
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+} */
 
 /* Чем мы занимаемся */
 
@@ -573,14 +604,3 @@ border-radius: 3px;
 }
 
 
-.address-list-item-link-icon
-{
-  margin-right: 10px;
-}
-
-
-.address-list-item-link
-{
-  display: flex;
-  align-items: center;
-}
