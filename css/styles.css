@@ -266,6 +266,7 @@ border-radius: 3px;
 .advantages-list-title {
   margin-top: 0;
   margin-bottom: 10px;
+  font-size: 14px;
 
   color: var(--primary-title-color);
 
@@ -296,9 +297,7 @@ border-radius: 3px;
 }
 .advantages-list-item-icon-container{
   padding: 25px 100px;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
+
 }
 
 /* Чем мы занимаемся */
@@ -313,27 +312,36 @@ border-radius: 3px;
 }
 
 .what-we-do-img {
-  display: block;
+  display: block;  
 }
 
 .what-we-do-img-title {
   display: block;
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 27px;
-  padding-bottom: 27px;
-
+  padding: 27px 0px;
   color: var(--text-white-color);
   background-color: rgba(47, 48, 58, 0.8);
 
+  font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
   text-align: center;
   text-transform: uppercase;
+
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+
 }
 
 .what-we-do-list-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.what-we-do-list-item-thumb{
+position: relative;
 }
 
 /* Наша команда */
