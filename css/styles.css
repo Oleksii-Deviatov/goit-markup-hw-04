@@ -23,7 +23,6 @@ html {
 
 body {
   background-color: var(--main-background);
-  /* background-color: rgb(194, 194, 194); */
   color: var(--primary-text-color);
 
   font-family: var(--main-font);
@@ -137,6 +136,7 @@ body {
 }
 
 .address-list-item-link {
+  display: flex;
   color: var(--primary-text-color);
 
   font-weight: 500;
@@ -152,13 +152,28 @@ body {
   color: var(--accent-color);
 }
 
+
+.active{
+position: relative;
+color: var(--accent-color);
+}
+
+.active::after{
+width: 100%;
+content: "";
+display: block;
+position: absolute;
+bottom: 0;
+right: 0;
+height: 4px;
+background-color: var(--accent-color);
+border-radius: 3px;
+}
+    
 /* Герой */
 .main-title {
   margin-top: 0;
   margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 696px;
 
   color: var(--primary-white-color);
 
@@ -173,7 +188,8 @@ body {
   min-width: 200px;
   padding-top: 10px;
   padding-bottom: 10px;
-  /* outline: none */
+  padding-left: 32px;
+  padding-right: 32px;
 
   color: var(--primary-white-color);
   background: var(--accent-color);
@@ -194,6 +210,23 @@ body {
   text-align: center;
 }
 
+.overlay{
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid black;
+  background-image: linear-gradient(
+     to right,
+     rgba(47, 48, 58, 0.8),
+     rgba(47, 48, 58, 0.8)
+   ),
+  url("../images/imgs/Hero_img.jpg");
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 /* преимущества */
 
 .advantages {
@@ -537,4 +570,16 @@ body {
 .project-list-item-link:focus {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
+
+.svg{
+  margin-right: 10px;
+}
+
+
+a 
+{
+    display: flex;
+  align-items: center;
 }
