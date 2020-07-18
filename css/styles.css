@@ -573,13 +573,14 @@ border-radius: 3px;
 }
 
 
-.svg{
+.address-list-item-link-icon
+{
   margin-right: 10px;
 }
 
 
-a 
+.address-list-item-link
 {
-    display: flex;
+  display: flex;
   align-items: center;
 }
