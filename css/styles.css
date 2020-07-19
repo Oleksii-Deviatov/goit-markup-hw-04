@@ -428,6 +428,7 @@ position: relative;
 }
 .our-team .social-list-link:hover,
 .our-team .social-list-link:focus{
+  /* будешь делать анимацию - смени  */
   background-color: var(--accent-color);
   border-radius: 50%;
   fill: var(--primary-white-color);
@@ -459,7 +460,8 @@ position: relative;
   fill: #AFB1B8;
 }
 
-.clients-list-item-link:hover{
+.clients-list-item-link:hover,
+.clients-list-item-link:focus{
   fill: var(--accent-color);
   border-color: var(--accent-color);
 }
@@ -548,14 +550,10 @@ position: relative;
     fill: #fff;
 }
 
-.footer .social-list-link:hover{
+.footer .social-list-link:hover,
+.footer .social-list-link:focus{
  background: var(--accent-color)
 }
-
-
-
-
-
 
 
 
