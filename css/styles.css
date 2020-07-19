@@ -41,8 +41,8 @@ body {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-
 }
+
 .link {
   display: block;
 
@@ -144,7 +144,8 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  fill: var(--primary-text-color);
+
+  fill: currentColor;
 }
 
 .address-list-item-link-icon{
@@ -218,6 +219,7 @@ border-radius: 3px;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  cursor: pointer;
 }
 
 .hero {
@@ -535,6 +537,28 @@ position: relative;
   text-transform: uppercase;
 }
 
+.footer .social-list-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    fill: #fff;
+}
+
+.footer .social-list-link:hover{
+ background: var(--accent-color)
+}
+
+
+
+
+
+
+
+
 /* портфолио */
 .our-works {
   padding-top: 93px;
@@ -545,6 +569,7 @@ position: relative;
   display: flex;
   justify-content: center;
   margin-bottom: 34px;
+ 
 }
 
 .our-works-filter-item:not(:last-child) {
@@ -568,6 +593,7 @@ position: relative;
 
   border: none;
   border-radius: 4px;
+   cursor: pointer;
 }
 
 .our-works-filter-button:hover,
@@ -646,5 +672,3 @@ position: relative;
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 1px 1px rgba(0, 0, 0, 0.12);
 }
-
-
