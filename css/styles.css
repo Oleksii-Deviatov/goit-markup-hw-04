@@ -91,6 +91,7 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 
 .logo-web {
@@ -129,9 +130,6 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-
-  fill: var(--primary-text-color);
-  
 }
 
 .address-list-item:not(:last-child) {
@@ -146,6 +144,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  fill: var(--primary-text-color);
 }
 
 .address-list-item-link-icon{
@@ -233,7 +232,7 @@ border-radius: 3px;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  outline: 1px solid black;
+  border: none;
   background-image: linear-gradient(
      to right,
      rgba(47, 48, 58, 0.8),
@@ -448,16 +447,28 @@ position: relative;
 .clients-list-item-link {
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   width: 170px;
   height: 90px;
   border: 1px solid #afb1b8;
+
   border-radius: 4px;
+
+  fill: #AFB1B8;
+}
+
+.clients-list-item-link:hover{
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 .clients-list-item:not(:last-child) {
   margin-right: 30px;
 }
+
+
+
+/* футер */
 
 .footer .container {
   display: flex;
