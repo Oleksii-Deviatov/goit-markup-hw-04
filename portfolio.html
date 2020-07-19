@@ -261,7 +261,7 @@
           <li class="social-list-item">
             <a class="social-list-link footer-social-list-link link" aria-label="иконка твиттер"
               href="https://twitter.com" target="_blank">
-              <svg class="social-list--item-link-icon" width="20" height="20">
+              <svg class="social-list-item-link-icon" width="20" height="20">
                 <use href="./images/icons/sprite.svg#icon-twitter"></use>
               </svg>
             </a>
@@ -269,7 +269,7 @@
           <li class="social-list-item">
             <a class="social-list-link footer-social-list-link link" aria-label="иконка фейсбук"
               href="https://www.facebook.com" target="_blank">
-              <svg class="social-list--item-link-icon" width="20" height="20">
+              <svg class="social-list-item-link-icon" width="20" height="20">
                 <use href="./images/icons/sprite.svg#icon-facebook"></use>
               </svg>
             </a>
@@ -277,7 +277,7 @@
           <li class="social-list-item">
             <a class="social-list-link footer-social-list-link link" aria-label="иконка линкедин"
               href="https://www.linkedin.com" target="_blank">
-              <svg class="social-list--item-link-icon" width="20" height="20">
+              <svg class="social-list-item-link-icon" width="20" height="20">
                 <use href="./images/icons/sprite.svg#icon-linkedin"></use>
               </svg>
             </a>
@@ -286,10 +286,14 @@
       </div>
       <div class="container-fotter-sign">
         <b class="footer-sign">подпишитесь на рассылку</b>
-        <form action="#">
-          <input type="email" name="e-mail" id="mail" value="E-mail" />
-          <input class="button" type="submit" value="Подписаться" />
-        </form>
+        <div class="footer-sign-form">
+          <form action="#">
+            <input class="footer-email-form" type="email" name="e-mail" id="mail" value="E-mail" />
+          </form>
+          <button class="button">Подписаться<svg class="footer-sign-icon" width="24" height="24">
+              <use href="./images/icons/sprite.svg#icon-send"></use>
+            </svg></button>
+        </div>
       </div>
     </div>
   </footer>
